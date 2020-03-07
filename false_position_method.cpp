@@ -29,6 +29,22 @@ public:
 };
 int main(){
     falsePosition ob;
-    ob.calculate(2.7,2.8);
+    ob.calculate(-9,6);
     return 0;
 }
+
+/*
+        do{
+            tmp=x2;
+            x2 = (x0*value(x1) - x1*value(x0))/(value(x1) - value(x0));
+            if(value(x2)==0.0){
+                break;
+            }
+            else if(value(x0)*value(x2)>0){
+                x0=x2;
+            }
+            else{
+                x1=x2;
+            }
+        }while(tmp-x2 >= 0.0001);
+*/

@@ -19,6 +19,6 @@ public:
 
 int main(){
     newtonRaphson ob;
-    ob.calculate(0.3);
+    ob.calculate(0.9);
     return 0;
 }

@@ -7,10 +7,15 @@ public:
         return 3*x-cos(x)-1;
     }
     void calculate(double a,double b){
-        while(true){
+       /*while(true){
             a-=.5;
             b+=.5;
             if(value(a)*value(b)<0.0) break;
+        }
+        */
+        if(value(a)*value(b) >= 0){
+            cout<<"Incorrect input"<<endl;
+            return;
         }
         double c;
         while((b-a)>=0.001){
@@ -26,13 +31,13 @@ public:
             }
         }
         cout<<"The value of the root is "<<c<<endl;
-        cout<<"values"<<a<<" "<<b<<endl;
+        //cout<<"values"<<a<<" "<<b<<endl;
     }
 };
 
 int main(){
     bisection ob;
-    double a=0,b=1;
+    double a=-1,b=1;
     ob.calculate(a,b);
     return 0;
 }
